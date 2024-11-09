@@ -1,0 +1,19 @@
+# Listas de ejemplo (puedes cambiar los valores)
+lista1 = [7, 2, 3, 4]
+lista2 = [10, 20, 30]
+
+# Determinamos la longitud máxima entre las dos listas
+longitud_maxima = max(len(lista1), len(lista2))
+
+# Extendemos las listas más cortas con ceros hasta la longitud máxima
+lista1.extend([0] * (longitud_maxima - len(lista1)))
+lista2.extend([0] * (longitud_maxima - len(lista2)))
+
+# Sumamos los elementos correspondientes
+resultado = [lista1[i] + lista2[i] for i in range(longitud_maxima)]
+
+# Imprimimos el resultado
+print("La suma de las listas es:", resultado)
+
+
+  
